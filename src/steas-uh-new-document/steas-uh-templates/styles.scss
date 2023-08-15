@@ -1,0 +1,20 @@
+@import '@servicenow/sass-kit/host';
+.templates {
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-collection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .template-selection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,28 @@
+@import '@servicenow/sass-kit/host';
+
+.meta-field {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+    .value-container {
+        z-index: 0;
+        display: flex;
+        gap: 10px;
+        .inline-buttons {
+            display: flex;
+            align-items: center;
+        }
+    }
+    label {
+        display: flex;
+        align-items: center;
+        color: #a5a5a5fe;
+        font-size: 12px;
+        .mandatory {
+            &.invalid {
+                color: red;
+            }
+        }
+    }
+}

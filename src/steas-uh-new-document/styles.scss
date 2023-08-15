@@ -1,0 +1,105 @@
+@import '@servicenow/sass-kit/host';
+
+.footer {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.creating {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .create-result {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        padding: 30px;
+
+    }
+}
+.button{
+    max-width: 100%;
+}
+
+.metadata {
+    display: flex;
+    gap: 40px;
+    .source-navigation {
+        flex-grow: 2;
+        .creating {
+            .loader-image {
+
+            }
+        }
+    }
+    .preview {
+
+        background-color: rgb(230, 230, 230);
+        border-radius: 4px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin: 10px;
+        min-width: 280px;
+        width: 35%;
+        min-height: 25%;
+
+        .current {
+            font-weight: bold;
+        }
+        .preview-header {
+            h1,h2,h3,h4,h5 {
+                margin: 0;
+                font-size: 14pt;
+            }
+            display:flex;
+            align-items: center;
+            gap: 4px;
+            
+            .caret {
+                color: rgb(230, 230, 230);
+                &.active {
+                    color: inherit
+                }
+            }
+        }
+        .document-preview-item {
+            background-color: white;
+            padding: 4px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 3px;
+            margin-left: 38px;
+            margin-right: 10px;
+            .preview-item-label {
+                max-width: 100%;
+                min-width: 50%;
+                width: 100%;
+                flex-grow: 2;
+            }
+            &.appendix {
+                margin-left: 60px;
+            }
+            .remove-btn {
+                fill:red;
+            }
+            .caret {
+                color: white;
+                .active {
+                    color: inherit;
+                }
+            }
+        }
+        
+    }
+}
+

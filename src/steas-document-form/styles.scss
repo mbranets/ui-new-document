@@ -1,0 +1,31 @@
+@import '@servicenow/sass-kit/host';
+
+.record-form {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        .titles {
+            
+            h1,h2,h3,h4,h5 {
+                margin: 0;
+                flex-grow: 2,
+            }
+            .subtitle {
+                color: rgb(158, 158, 158);
+            }
+        }
+        
+    }
+
+    form {
+        list-style: none;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 10px;
+        > * {
+            min-width: 26%;
+        }
+    }
+}

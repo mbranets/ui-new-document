@@ -1,0 +1,60 @@
+{
+	"components": {
+		"steas-uh-new-document": {
+			"innerComponents": [],
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core",
+					"global.landing-page"
+				],
+				"label": "New Document",
+				"icon": "document-outline",
+				"description": "A web componenet that provide ability to create/upload new document.",
+				"category": "primitives"
+			},
+			"properties": [
+				{
+					"name": "entryUID",
+					"label": "Registration UID",
+					"readOnly": false,
+					"description": "Registration UID",
+					"fieldType": "string",
+					"required": true,
+					"defaultValue": "",
+					"typeMetadata": {}
+				},
+				{
+					"name": "caseUID",
+					"label": "Case UID",
+					"description": "The unique identifier for the case",
+					"readOnly": false,
+					"fieldType": "string",
+					"required": true,
+					"defaultValue": "344b4d5d1b5f0550f7572136ec4bcb6f",
+					"typeMetadata": {}
+				},
+				{
+					"name": "refresh",
+					"label": "Refresh component",
+					"description": "Refresh component",
+					"readOnly": false,
+					"fieldType": "boolean",
+					"required": false,
+					"defaultValue": false,
+					"typeMetadata": {}
+				},
+				{
+					"name": "timeZoneOffset",
+					"label": "Time Zone",
+					"description": "User Time Zone Offset",
+					"readOnly": false,
+					"fieldType": "number",
+					"required": false,
+					"defaultValue": "0",
+					"typeMetadata": {}
+				}
+			]
+		}
+	},
+	"scopeName": "x_steas_uh_new_d_0"
+}
